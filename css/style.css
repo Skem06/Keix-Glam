@@ -1,0 +1,542 @@
+/* ================== 1. RESET Y BASE ================== */
+body {
+  font-family: 'Georgia', cursive;
+  background-color: #fff8f0;
+  color: #6b3e3e;
+  margin: 0;
+  padding: 0;
+  padding-top:5px; 
+}
+
+h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 2rem 0 1.2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+p, label, input, textarea, li {
+  font-size: 1.2rem;
+}
+
+
+/* ================== 2. HEADER Y NAV ================== */
+header {
+  background-color: #fdddec;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.logo {
+  max-width: 120px;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 1rem;
+}
+
+.navbar a {
+  background-color: #fff0f8;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  color: #5e2c34;
+  text-decoration: none;
+  font-size: 1.3rem;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #f7c2d8;
+  transform: scale(1.05);
+  color: #b66e8b;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* ================== 3. INICIO ================== */
+.seccion-inicio {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.titulo{
+  font-size: 30px;
+  
+
+}
+.titulo-video {
+  font-size: 1rem;
+  margin: 2rem 0 1rem;
+  color: #6b3e3e;
+}
+
+.video-skincare {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.video-centrado {
+  width: 720px;
+  height: 320px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.destacado-img {
+  max-width: 300px;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  margin-bottom: 4rem;
+  transition: transform 0.3s ease;
+}
+
+.destacado-img:hover {
+  transform: scale(1.04);
+}
+
+
+/* ================== 4. GALERÍA PIRÁMIDE ================== */
+.galeria-inicio {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.piramide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+
+.fila-arriba,
+.fila-abajo {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.piramide img {
+  width: 500px;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.piramide img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================== 5. ACERCA ================== */
+.acerca-keix {
+  text-align: center;
+  padding: 3rem 2rem;
+  font-size: 25px;
+}
+
+.cuadro-info {
+  background-color: #fffaf3;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin: 0 auto 3rem;
+  max-width: 800px;
+  text-align: left;
+}
+
+.cuadro-info p,
+.cuadro-info ul {
+  margin-bottom: 15px;
+  color: #5f415b;
+}
+
+.cuadro-info ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.ingredientes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.ingrediente {
+  background-color: #ffe7f2;
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 0 15px #f8cce2;
+  transition: transform 0.3s ease;
+  width: 200px;
+  animation: saltar 2s ease-in-out infinite;
+}
+
+.ingrediente.central {
+  width: 220px;
+  animation: resplandor 2s ease-in-out infinite;
+}
+
+.ingrediente img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.ingrediente p {
+  margin-top: 0.5rem;
+  color: #6c2e4c;
+  font-weight: 500;
+}
+
+
+/* ================== 6. PRODUCTOS ================== */
+.productos-destacados,
+.productos-normales {
+  text-align: center;
+  padding: 0;
+  background-color: #fff5ed;
+  font-size: 20px;
+}
+.productos-destacados h1{
+    font-size: 35px;
+}
+
+.destacados,
+.grid-productos,
+.fila-sliders {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.card,
+.card-slider {
+  background-color: #ffeaf1;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  max-width: 250px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.card:hover,
+.card-slider:hover {
+  transform: scale(1.03);
+}
+
+.card img,
+.card-slider img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.card h3,
+.card-slider h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #6b3e3e;
+}
+
+.card p,
+.card-slider p {
+  color: #a05270;
+  font-weight: bold;
+}
+
+
+/* ===== SLIDER DENTRO DE TARJETAS ===== */
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 230px;
+  margin: 0 auto 1rem;
+  border-radius: 15px;
+}
+
+.slider-imgs {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  width: 100%;
+}
+
+.slider-imgs img {
+  flex-shrink: 0;
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f7a1c4;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+
+/* ================== 7. CARRITO ================== */
+.carrito {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.mensaje-compra {
+  font-size: 1.2rem;
+  background-color: #fff8fc;
+  color: #7b4a4a;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 0 10px rgba(193, 160, 160, 0.2);
+}
+
+.formulario-compra {
+  max-width: 500px;
+  margin: 2rem auto;
+  background-color: #fff0f5;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  animation: fadeInUp 0.8s ease;
+}
+
+.formulario-compra label {
+  font-weight: bold;
+  color: #6b3e3e;
+}
+
+.formulario-compra input,
+.formulario-compra textarea {
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: 'Georgia', cursive;
+}
+
+.formulario-compra button {
+  background-color: #ffb6c1;
+  color: #4e2c2c;
+  font-weight: bold;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-compra button:hover {
+  background-color: #ffa6b9;
+}
+
+
+/* ================== 8. CONTACTO ================== */
+.formulario-contacto {
+  max-width: 700px;
+  margin: 3rem auto;
+  background-color: #fff0f5;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  font-family: 'Georgia', cursive;
+  text-align: center;
+}
+
+.formulario-contacto h2, .formulario-contacto h3 {
+  color: #a05270;
+  margin-bottom: 1rem;
+}
+
+.formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.formulario-contacto label {
+  align-self: flex-start;
+  margin-left: 1.5rem;
+  font-weight: bold;
+  color: #6b3e3e;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 90%;
+  max-width: 400px;
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: 'Georgia', cursive;
+  font-size: 1rem;
+}
+
+.formulario-contacto button {
+  background-color: #ffb6c1;
+  color: #4e2c2c;
+  font-weight: bold;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: #ffa6b9;
+}
+
+
+/* ================== 9. ANIMACIONES ================== */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes resplandor {
+  0%, 100% { box-shadow: 0 0 15px #ffddee; }
+  50% { box-shadow: 0 0 30px #ffbbdd; }
+}
+
+@keyframes saltar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+
+/* ================== 10. RESPONSIVE DESIGN ================== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .video-centrado {
+    width: 90%;
+    height: auto;
+  }
+
+  .formulario-compra,
+  .formulario-contacto {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .fila-abajo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .piramide img {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .seccion-inicio .titulo {
+    font-size: 2rem;
+  }
+
+  .seccion-inicio .subtitulo {
+    font-size: 1.2rem;
+  }
+
+  .destacado-img {
+    max-width: 90%;
+  }
+
+  .mensaje-compra {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .logo {
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .seccion-inicio {
+    padding: 2rem 0.5rem;
+  }
+
+  .navbar a {
+    font-size: 0.9rem;
+  }
+
+  .mensaje-compra {
+    font-size: 0.9rem;
+    width: 95%;
+  }
+}
+nav a {
+  background-color: #fff0f8; 
+  padding: 0.5rem 1.5rem;   
+  border-radius: 2rem;    
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  color: #5e2c34;       
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-size: 1.3rem;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  background-color: #f7c2d8;
+  transform: scale(1.05);   
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+}
+
